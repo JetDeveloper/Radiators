@@ -1,0 +1,9 @@
+C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\Radiators\bin\Debug\Radiators.exe
+C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\Radiators\bin\Debug\Radiators.pdb
+C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\Radiators\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\Radiators\obj\x86\Debug\Radiators.Form1.resources
+C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\Radiators\obj\x86\Debug\Radiators.Properties.Resources.resources
+C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\Radiators\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\Radiators\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\Radiators\obj\x86\Debug\Radiators.exe
+C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\Radiators\obj\x86\Debug\Radiators.pdb
