@@ -25,6 +25,8 @@ namespace LibLight
     ComSourceInterfaces(typeof(LightCOM_Events))]
     public class LigthCOM_Class : LightCOM_Interface
     {
+       public const int NUMBER_ANGLE = 18;
+       public const int NUMBER_C = 13;
        public struct LED
         {
             public bool isON;
@@ -39,6 +41,9 @@ namespace LibLight
         public int numberLED;
         public double LEDPower;
         public double LEDPlateWidth, LEDPlateHeight;
+        public double Ea;
+        public double[,] Ia, E;
+
 
         public int getNumberLED(double F, double F_LED)
         {
@@ -75,9 +80,27 @@ namespace LibLight
             }
             return table;
         }
-        public void calculateE(double mu, double k)
+        public void calculateE(double mu, double k, double Io, double hp, double angle, double[] posX, double[] posY)
         {
-            //TODO:
+
+            Ia = new double[NUMBER_ANGLE, NUMBER_C];
+            E = new double[NUMBER_ANGLE, NUMBER_C];
+
+            for (int i = 0; i < NUMBER_ANGLE; i++)
+            {
+                for (int j = 0; j < NUMBER_C; j++)
+                {
+                   // for(int t = 0; t<numberLED; t++)
+                   // {
+                        double X = hp*Math.Tan((i*5)*Math.PI/180)*Math.Cos((j*15)*Math.PI/180);
+                        double Y = hp*Math.Tan((i*5)*Math.PI/180)*Math.Sin((j*15)*Math.PI/180);
+                        Ia[i,j] = (Io*(hp*hp /* +(posX[t]-X)*(posX[t]-X) +(posY[t]-Y)*(posY[t]-Y) */ + (Math.Pow(hp,2)/Math.Pow(Math.Cos(angle),2))/*-(posX[t]-X)*(posX[t]-X)-(posY[t]-Y)*(posY[t]-Y)*/))
+                                  /(Math.Pow((2*hp*hp+X*X+Y*Y),0.5)*(hp/Math.Cos(angle)));
+                        E[i, j] = (Ia[i, j] * Math.Pow(Math.Cos(angle), 3) * mu) / (k * hp * hp);
+                  //  }
+                }
+            }
+
             return;
         }
         public void exportResults(string fileName)
@@ -85,13 +108,13 @@ namespace LibLight
            //TODO:
            return;
         }
-        public void calculateLigth(double F, double F_LED, double P_LED, double mu, double k)
+        public void calculateLigth(double F, double F_LED, double P_LED, double mu, double k, double E, double S, double d, double hp)
         {
             numberLED = getNumberLED(F, F_LED);
             LEDPower = getPower(P_LED, numberLED);
             LED[] table = new LED[numberLED];
             table = getFirstTable(table, F);
-            calculateE(mu, k);
+            calculateE(mu, k, F/Math.PI,hp,getAngle(d,hp),null,null);
             //TODO:
         }
 
