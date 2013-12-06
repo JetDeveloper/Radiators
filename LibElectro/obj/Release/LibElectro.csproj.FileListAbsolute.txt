@@ -1,0 +1,6 @@
+C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibElectro\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibElectro\bin\Release\LibElectro.dll
+C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibElectro\bin\Release\LibElectro.pdb
+C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibElectro\obj\Release\LibElectro.dll
+C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibElectro\obj\Release\LibElectro.pdb
+C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibElectro\bin\Release\LibElectro.tlb

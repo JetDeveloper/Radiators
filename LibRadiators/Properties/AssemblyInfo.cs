@@ -18,7 +18,7 @@ using System.Runtime.InteropServices;
 // для COM-компонентов.  Если требуется обратиться к типу в этой сборке через 
 // COM, задайте атрибуту ComVisible значение TRUE для этого типа.
 [assembly: ComVisible(false)]
-
+[assembly: AssemblyKeyFile("Radiator_COM_Key.snk")]
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
 [assembly: Guid("ec432b10-f631-48be-ad53-5ecfe434f134")]
 

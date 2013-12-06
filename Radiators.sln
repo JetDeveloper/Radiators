@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibRadiators", "LibRadiator
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibLight", "LibLight\LibLight.csproj", "{9C8D4B1D-3F80-43A5-BD13-DF9C66192018}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibElectro", "LibElectro\LibElectro.csproj", "{8BB9368D-2F50-4550-82ED-177CB9F9D36D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,16 @@ Global
 		{9C8D4B1D-3F80-43A5-BD13-DF9C66192018}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{9C8D4B1D-3F80-43A5-BD13-DF9C66192018}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{9C8D4B1D-3F80-43A5-BD13-DF9C66192018}.Release|x86.ActiveCfg = Release|Any CPU
+		{8BB9368D-2F50-4550-82ED-177CB9F9D36D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BB9368D-2F50-4550-82ED-177CB9F9D36D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BB9368D-2F50-4550-82ED-177CB9F9D36D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8BB9368D-2F50-4550-82ED-177CB9F9D36D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8BB9368D-2F50-4550-82ED-177CB9F9D36D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8BB9368D-2F50-4550-82ED-177CB9F9D36D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BB9368D-2F50-4550-82ED-177CB9F9D36D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BB9368D-2F50-4550-82ED-177CB9F9D36D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8BB9368D-2F50-4550-82ED-177CB9F9D36D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8BB9368D-2F50-4550-82ED-177CB9F9D36D}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

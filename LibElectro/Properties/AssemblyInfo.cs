@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("LibLight")]
+[assembly: AssemblyTitle("LibElectro")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("LibLight")]
+[assembly: AssemblyProduct("LibElectro")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -18,10 +18,10 @@ using System.Runtime.InteropServices;
 // для COM-компонентов.  Если требуется обратиться к типу в этой сборке через 
 // COM, задайте атрибуту ComVisible значение TRUE для этого типа.
 [assembly: ComVisible(false)]
-[assembly: AssemblyKeyFile("Light_COM_Key.snk")]
+[assembly: AssemblyKeyFile("Electro_COM_key.snk")]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("e563735a-cc6c-4a45-8502-7c6f6507f47d")]
+[assembly: Guid("02aa66c6-362a-49f3-af1d-84b2c7c7c884")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //
