@@ -71,9 +71,9 @@ namespace LibRadiators
             double Sp = ledPower / (a * dTempRadEnv);
             double S = Sp / numberEdge;
             double Q = (double)Math.Pow((double)(3 * a * a * lambda * S), 1 / 3.0) / dTempRadEnv;
-            double h_opt = (1 / a) * (Q / dTempRadEnv);
-            double width = (1 / (a * lambda)) * (Q / dTempRadEnv) * (Q / dTempRadEnv) * (Q / dTempRadEnv);
-            double b = (radLength - width * radLength) / (numberEdge - 1);
+            h_opt = (1 / a) * (Q / dTempRadEnv);
+            width = (1 / (a * lambda)) * (Q / dTempRadEnv) * (Q / dTempRadEnv) * (Q / dTempRadEnv);
+            b = (radLength - width * radLength) / (numberEdge - 1);
         }
 
         // получить оптимальную ширину ребра
