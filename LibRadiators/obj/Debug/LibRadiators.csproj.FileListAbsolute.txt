@@ -1,6 +1,4 @@
-C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibRadiators\bin\Debug\LibRadiators.dll
-C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibRadiators\bin\Debug\LibRadiators.pdb
-C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibRadiators\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibRadiators\obj\Debug\LibRadiators.dll
-C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibRadiators\obj\Debug\LibRadiators.pdb
-C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibRadiators\bin\Debug\LibRadiators.tlb
+C:\Users\mykhailo.lysenko\Documents\Radiators\bin\Debug\LibRadiators.dll
+C:\Users\mykhailo.lysenko\Documents\Radiators\bin\Debug\LibRadiators.pdb
+C:\Users\mykhailo.lysenko\Documents\Radiators\LibRadiators\obj\Debug\LibRadiators.dll
+C:\Users\mykhailo.lysenko\Documents\Radiators\LibRadiators\obj\Debug\LibRadiators.pdb
