@@ -7,7 +7,7 @@ using System.IO;
 namespace LibLight
 {
     [Guid("6F4E9367-2EC0-4A64-AE8B-847380861E22")]
-    public interface LightCOM_Interface
+    public interface ILight
     {
         [DispId(1)]
         double getPlateWidth(double LED_length, double l, double m, double k, int numberLED);
@@ -27,14 +27,14 @@ namespace LibLight
 
     [Guid("A5E2E2EB-111A-4D76-9447-F1FDF93B209A"),
     InterfaceType(ComInterfaceType.InterfaceIsIDispatch)]
-    public interface LightCOM_Events
+    public interface ELight
     {
     }
 
     [Guid("2AB2556B-8A23-45F1-B0A8-7B52568F8B02"),
     ClassInterface(ClassInterfaceType.None),
-    ComSourceInterfaces(typeof(LightCOM_Events))]
-    public class LigthCOM_Class : LightCOM_Interface
+    ComSourceInterfaces(typeof(ELight))]
+    public class Ligth : ILight
     {
         public const int NUMBER_ANGLE = 19;
         public const int NUMBER_C = 19;

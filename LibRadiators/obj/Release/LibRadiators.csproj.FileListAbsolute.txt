@@ -1,5 +1,0 @@
-C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibRadiators\bin\Release\LibRadiators.dll
-C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibRadiators\bin\Release\LibRadiators.pdb
-C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibRadiators\obj\Release\ResolveAssemblyReference.cache
-C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibRadiators\obj\Release\LibRadiators.dll
-C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibRadiators\obj\Release\LibRadiators.pdb

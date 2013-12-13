@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 namespace LibRadiators
 {
     [Guid("C90CE3DA-A634-4003-A419-DE4C1F33B72E")]
-    public interface RadiatorCOM_Interface
+    public interface IRadiator
     {
         [DispId(1)]
         double getK2koef(double tm);
@@ -22,14 +22,14 @@ namespace LibRadiators
 
     [Guid("F97A0DCD-B728-4EF2-8CFE-230561C39C67"),
     InterfaceType(ComInterfaceType.InterfaceIsIDispatch)]
-    public interface RadiatorCOM_Events
+    public interface ERadiator
     {
     }
 
     [Guid("9E5E5FB2-219D-4ee7-AB27-E4DBED8E123E"),
     ClassInterface(ClassInterfaceType.None),
-    ComSourceInterfaces(typeof(RadiatorCOM_Events))]
-    public class RadiatorCOM_Class : RadiatorCOM_Interface
+    ComSourceInterfaces(typeof(ERadiator))]
+    public class Radiator : IRadiator
     {
         public double h_opt = 0.0;    /* отпитмальная высота      */  
         public double b     = 0.0;    /* расстояние между ребрами */

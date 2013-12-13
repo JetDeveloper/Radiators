@@ -1,6 +1,0 @@
-C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibLight\bin\Release\LibLight.dll
-C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibLight\bin\Release\LibLight.pdb
-C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibLight\obj\Release\ResolveAssemblyReference.cache
-C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibLight\obj\Release\LibLight.dll
-C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibLight\obj\Release\LibLight.pdb
-C:\Users\Dima\Documents\Visual Studio 2010\Projects\Radiators\LibLight\bin\Release\LibLight.tlb
