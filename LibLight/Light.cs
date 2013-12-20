@@ -89,7 +89,8 @@ namespace LibLight
          */
         public double getPlateWidth(double LED_length, double l, double m, double k, int numberLED)
         {
-            return numberLED * LED_length + l * m + k;
+            LEDPlateWidth = numberLED * LED_length + l * m + k;
+            return LEDPlateWidth;
         }
 
         /**
@@ -102,14 +103,15 @@ namespace LibLight
          */
         public double getPlateHeight(double LED_width, double l, double m, double k, int numberLED)
         {
-            return numberLED * LED_width + l * m + k;
+            LEDPlateHeight = numberLED * LED_width + l * m + k;
+            return LEDPlateHeight;
         }
 
         /**
          * Расчет угла между направлением силы света в рассчетную точку
          * и осью симметрии осветительного прибора
          * d  - расстояние от проекции светильника на расчетную плоскость О до 
-         *      точки А (см. Светотехнический расчет)
+         *      точки А (см. Светотехнический расчет) (в метрах
          * hp - высота расчетной поверхности
          */
         public double getAngle(double d, double hp)
@@ -204,10 +206,11 @@ namespace LibLight
             lines.AddLast("1");
             lines.AddLast("1");
             StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < NUMBER_ANGLE; i++)
+            // тут хз пока что его считать должно
+          /*  for (int i = 0; i < NUMBER_ANGLE; i++)
             {
                 sb.Append(table[i]+ " ");
-            }
+            }*/
             lines.AddLast(sb.ToString());
             for (int i = 0; i < NUMBER_ANGLE; i++)
             {
@@ -226,16 +229,18 @@ namespace LibLight
         /**
          * Светотехнический расчет
          * 
-         * F     - световой поток светильника
-         * F_LED - световой поток одного диода
-         * P_LED - мощность одного диода
+         * F     - световой поток светильника (2500 лм например)
+         * F_LED - световой поток одного диода (500 лм) 
+         * P_LED - мощность одного диода (1-.. Вт, 10 например)
          * mu    - коэффициент, учитывающий действие удаленный от расчетной точки
          *         светильников и отраженного светового потока от стен, потолка, пола,
          *         оборудования, падающего на рабочую поверхность в расчетной точке
          *         (принимают в пределах 1,05-1,2)
-         * k     - коэффициент запаса
-         * Io    - сила света единичного светодиода
-         * hp    - высота подвеса светильника над рабочей поверхностью
+         * k     - коэффициент запаса (это чисто практичексий коэфф. ну от дупля 0,3)
+         * d     - расстояние от проекции светильника на расчетную плоскость О до 
+         *         точки А (см. Светотехнический расчет) (в метрах 10 например)
+         * Io    - сила света единичного светодиода (4000 например)
+         * hp    - высота подвеса светильника над рабочей поверхностью (в метрах, там 2 например)
          */
         public void calculateLigth(double F, double F_LED, double P_LED, double mu, double k, double d, double hp)
         {
